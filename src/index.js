@@ -51,7 +51,7 @@ export const changeWord = (string, word, newWord) => {
  * @returns {string}
  */
 export const truncate = (string, length) => {
-      let str = ('string ');
+      let str = ('string');
       return str.toLowerCase().slice(0, length);
     };
     truncate();
@@ -98,7 +98,7 @@ export const quantityOfSymbols = (string, symbol) => {
  */
 export const quantityOfSymbolsWithIndexOf = (string, symbol) => {
     let str = 'string';
-    let target = 't'; 
+    let target = 'symbol'; 
     let charCounter = 0;
     let currentPos = 0;
       while (true) {
