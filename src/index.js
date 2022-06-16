@@ -53,8 +53,7 @@ export const changeWord = (string, word, newWord) => {
  */
 export const truncate = (string, length) => {
       let str = ('test strubg ');
-      let lengthSeparator = +prompt('Enter separating value'); // что бы вернуло 'tes' - вводим 3
-      return str.toLowerCase().substr(0, lengthSeparator);
+      return str.toLowerCase().slice(0, length);
     };
     truncate();
  
