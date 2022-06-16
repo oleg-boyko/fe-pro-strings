@@ -5,19 +5,21 @@
  * @returns {string}
  */
 export const replaceZAndVFromString = (string) => {  //не мог почему-то допетрать первую задачу,а остальные решил вовремя((
-       let result = '';
-      for (let symbol of 'string'){
-        if(symbol.toLowerCase().includes('z') || symbol.toLowerCase().includes('v'))
+     let result = '';
+       for (let symbol of 'string'){
+         if(symbol.toLowerCase().includes('z') || symbol.toLowerCase().includes('v'))
         {
-        result = `${result}*`;
+          result = `${result}*`;
         }
-      else { 
-      result = `${result}${symbol}`
-        }
-       }
-    return result;
-    };
-    replaceZAndVFromString ();
+       else  { 
+          result = `${result}${symbol}`
+              }
+         }
+        return result;
+        };
+  replaceZAndVFromString ();
+ 
+   
     
 /**
  * Функция должна принять 3 аргумента и все строки. Мы передаем строку,
@@ -42,6 +44,8 @@ export const changeWord = (string, word, newWord) => {
     return result;
   };
   changeWord ();
+  
+
 
 
 /**
@@ -55,6 +59,8 @@ export const truncate = (string, length) => {
       return str.toLowerCase().slice(0, length);
     };
     truncate();
+    
+ 
  
 
 /**
@@ -69,7 +75,7 @@ export const truncate = (string, length) => {
  * @returns {number}
  */
 export const quantityOfSymbols = (string, symbol) => {
-  let str = 'string';
+ let str = 'Test';
     let charCounter = 0; 
       for(let char of str){
         if(char.toLowerCase().includes('symbol')){
@@ -79,6 +85,8 @@ export const quantityOfSymbols = (string, symbol) => {
     return `${charCounter}`;
     };//end function
     quantityOfSymbols();
+  
+
 
 
 /**
@@ -97,7 +105,7 @@ export const quantityOfSymbols = (string, symbol) => {
  * @returns {number}
  */
 export const quantityOfSymbolsWithIndexOf = (string, symbol) => {
-    let str = 'string';
+  let str = 'string';
     let target = 'symbol'; 
     let charCounter = 0;
     let currentPos = 0;
@@ -110,6 +118,8 @@ export const quantityOfSymbolsWithIndexOf = (string, symbol) => {
     return `${charCounter}`;
     };// end function
     quantityOfSymbolsWithIndexOf();
+ 
+  
 
 
 
