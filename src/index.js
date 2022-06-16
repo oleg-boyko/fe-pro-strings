@@ -5,8 +5,7 @@
  * @returns {string}
  */
 export const replaceZAndVFromString = (string) => {  //не мог почему-то допетрать первую задачу,а остальные решил вовремя((
-    const replaceZAndVFromString = (string) => {
-    let result = '';
+       let result = '';
       for (let symbol of 'strt z and v'){
         if(symbol.toLowerCase().includes('z') || symbol.toLowerCase().includes('v'))
         {
@@ -53,7 +52,6 @@ export const changeWord = (string, word, newWord) => {
  * @returns {string}
  */
 export const truncate = (string, length) => {
-    const truncate = (string, length) => {
       let str = ('test strubg ');
       let lengthSeparator = +prompt('Enter separating value'); // что бы вернуло 'tes' - вводим 3
       return str.toLowerCase().substr(0, lengthSeparator);
@@ -73,7 +71,7 @@ export const truncate = (string, length) => {
  * @returns {number}
  */
 export const quantityOfSymbols = (string, symbol) => {
- let str = 'Test';
+  let str = 'Test';
     let charCounter = 0; 
       for(let char of str){
         if(char.toLowerCase().includes('t')){
@@ -101,7 +99,7 @@ export const quantityOfSymbols = (string, symbol) => {
  * @returns {number}
  */
 export const quantityOfSymbolsWithIndexOf = (string, symbol) => {
-  let str = 'Test';
+    let str = 'Test';
     let target = 't'; 
     let charCounter = 0;
     let currentPos = 0;
