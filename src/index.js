@@ -4,7 +4,22 @@
  * @param {string} string
  * @returns {string}
  */
-export const replaceZAndVFromString = (string) => {};
+export const replaceZAndVFromString = (string) => {  //не мог почему-то допетрать первую задачу,а остальные решил вовремя((
+    const replaceZAndVFromString = (string) => {
+    let result = '';
+      for (let symbol of 'strt z and v'){
+        if(symbol.toLowerCase().includes('z') || symbol.toLowerCase().includes('v'))
+        {
+        result = `${result}*`;
+        }
+      else { 
+      result = `${result}${symbol}`
+        }
+       }
+    return result;
+    };
+    replaceZAndVFromString ();
+    };
 
 /**
  * Функция должна принять 3 аргумента и все строки. Мы передаем строку,
@@ -16,7 +31,20 @@ export const replaceZAndVFromString = (string) => {};
  * @param {string} newWord
  * @returns {string}
  */
-export const changeWord = (string, word, newWord) => {};
+export const changeWord = (string, word, newWord) => {
+    let result = 'my name bohdan and I', i = 0, wordSubLen = 'bohdan'.length;
+    while (wordSubLen) {
+      i = result.toLowerCase().indexOf('bohdan', i);
+      if (i === -1) {
+      break;
+      };
+      result = `${result.slice(0, i)}vlad${result.slice(i + wordSubLen)}`;
+      i += wordSubLen;
+    };
+    return result;
+  };
+  changeWord ();
+};
 
 /**
  * Должна вернуть строку(1 аргумент) на обрезанную по длине(2 аргумент, число)
@@ -24,7 +52,14 @@ export const changeWord = (string, word, newWord) => {};
  * @param {number} length
  * @returns {string}
  */
-export const truncate = (string, length) => {};
+export const truncate = (string, length) => {
+    const truncate = (string, length) => {
+      let str = ('test strubg ');
+      let lengthSeparator = +prompt('Enter separating value'); // что бы вернуло 'tes' - вводим 3
+      return str.toLowerCase().substr(0, lengthSeparator);
+    };
+    truncate();
+  };
 
 /**
  * Принимает строку в первом аргументе, и символ во втором
@@ -37,7 +72,18 @@ export const truncate = (string, length) => {};
  * @param {string} symbol
  * @returns {number}
  */
-export const quantityOfSymbols = (string, symbol) => {};
+export const quantityOfSymbols = (string, symbol) => {
+ let str = 'Test';
+    let charCounter = 0; 
+      for(let char of str){
+        if(char.toLowerCase().includes('t')){
+        charCounter++;
+        }// end if
+      };//end for of
+    return `${charCounter}`;
+    };//end function
+    quantityOfSymbols();
+};
 
 /**
  * Принимает строку в первом аргументе, и символ во втором
@@ -54,4 +100,18 @@ export const quantityOfSymbols = (string, symbol) => {};
  * @param {string} symbol
  * @returns {number}
  */
-export const quantityOfSymbolsWithIndexOf = (string, symbol) => {};
+export const quantityOfSymbolsWithIndexOf = (string, symbol) => {
+  let str = 'Test';
+    let target = 't'; 
+    let charCounter = 0;
+    let currentPos = 0;
+      while (true) {
+      let charPos = str.toLowerCase().indexOf(target, currentPos);
+        if (charPos === -1) break;
+        currentPos = charPos + 1; 
+        charCounter++;
+        }// end while
+    return `${charCounter}`;
+    };// end function
+    quantityOfSymbolsWithIndexOf();
+};
