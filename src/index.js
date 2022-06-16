@@ -4,7 +4,7 @@
  * @param {string} string
  * @returns {string}
  */
-export const replaceZAndVFromString = (string) => {  //не мог почему-то допетрать первую задачу,а остальные решил вовремя((
+export const replaceZAndVFromString = (string) => {  
      let result = '';
        for (let symbol of string){
          if(symbol.toLowerCase().includes('z') || symbol.toLowerCase().includes('v'))
