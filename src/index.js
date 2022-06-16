@@ -75,7 +75,7 @@ export const truncate = (string, length) => {
  * @returns {number}
  */
 export const quantityOfSymbols = (string, symbol) => {
- let str = 'Test';
+ let str = 'string';
     let charCounter = 0; 
       for(let char of str){
         if(char.toLowerCase().includes('symbol')){
