@@ -19,7 +19,7 @@ export const replaceZAndVFromString = (string) => {  //не мог почему-
     return result;
     };
     replaceZAndVFromString ();
-    };
+    
 
 /**
  * Функция должна принять 3 аргумента и все строки. Мы передаем строку,
@@ -44,7 +44,7 @@ export const changeWord = (string, word, newWord) => {
     return result;
   };
   changeWord ();
-};
+
 
 /**
  * Должна вернуть строку(1 аргумент) на обрезанную по длине(2 аргумент, число)
@@ -59,7 +59,7 @@ export const truncate = (string, length) => {
       return str.toLowerCase().substr(0, lengthSeparator);
     };
     truncate();
-  };
+ 
 
 /**
  * Принимает строку в первом аргументе, и символ во втором
@@ -83,7 +83,7 @@ export const quantityOfSymbols = (string, symbol) => {
     return `${charCounter}`;
     };//end function
     quantityOfSymbols();
-};
+
 
 /**
  * Принимает строку в первом аргументе, и символ во втором
@@ -114,4 +114,4 @@ export const quantityOfSymbolsWithIndexOf = (string, symbol) => {
     return `${charCounter}`;
     };// end function
     quantityOfSymbolsWithIndexOf();
-};
+
