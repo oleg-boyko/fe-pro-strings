@@ -70,9 +70,9 @@ const changeWord = (string, word, newWowrd) => {
  */
 export const truncate = (string, length) => {
       let str = string;
-      return str.slice(string, length);
+      return str.toLowerCase().slice(string, length);
     };
-    truncate();
+    /*truncate();*/
     
  
  
