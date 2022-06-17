@@ -6,7 +6,7 @@
  */
 export const replaceZAndVFromString = (string) => {  
      let result = '';
-       for (let symbol of 'strt z and v'){
+       for (let symbol of string){
          if(symbol.toLowerCase().includes('z') || symbol.toLowerCase().includes('v'))
         {
           result = `${result}*`;
@@ -32,13 +32,13 @@ export const replaceZAndVFromString = (string) => {
  * @returns {string}
  */
 export const changeWord = (string, word, newWord) => {
-    let result = 'my name bohdan and I', i = 0, wordSubLen = 'bohdan'.length;
+    let result = string, i = 0, wordSubLen = word.length;
     while (wordSubLen) {
-      i = result.toLowerCase().indexOf('bohdan', i);
+      i = result.toLowerCase().indexOf(word, i);
       if (i === -1) {
       break;
       };
-      result = `${result.slice(0, i)}vlad${result.slice(i + wordSubLen)}`;
+      result = `${result.slice(0, i)}newWowrd${result.slice(i + wordSubLen)}`;
       i += wordSubLen;
     };
     return result;
@@ -55,8 +55,8 @@ export const changeWord = (string, word, newWord) => {
  * @returns {string}
  */
 export const truncate = (string, length) => {
-      let str = 'test strubg ';
-      return str.toLowerCase().slice('test strubg ', 3);
+      let str = string;
+      return str.toLowerCase().slice(string, length);
     };
     truncate();
     
@@ -75,10 +75,10 @@ export const truncate = (string, length) => {
  * @returns {number}
  */
 export const quantityOfSymbols = (string, symbol) => {
- let str = 'Test';
+ let str = string;
     let charCounter = 0; 
       for(let char of str){
-        if(char.toLowerCase().includes('t')){
+        if(char.toLowerCase().includes(symbol)){
         charCounter++;
         }// end if
       };//end for of
@@ -105,8 +105,8 @@ export const quantityOfSymbols = (string, symbol) => {
  * @returns {number}
  */
 export const quantityOfSymbolsWithIndexOf = (string, symbol) => {
-  let str = 'Test';
-    let target = 't'; 
+  let str = string;
+    let target = symbol; 
     let charCounter = 0;
     let currentPos = 0;
       while (true) {
