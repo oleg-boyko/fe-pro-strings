@@ -7,7 +7,7 @@
 export const replaceZAndVFromString = (string) => {  
      let result = '';
        for (let symbol of string){
-         if(symbol.toLowerCase().includes(symbol) || symbol.toLowerCase().includes(symbol))
+         if(symbol.toLowerCase().includes('symbol') || symbol.toLowerCase().includes('symbol'))
         {
           result = `${result}*`;
         }
@@ -54,7 +54,7 @@ const changeWord = (string, word, newWowrd) => {
     };
     return result;
   };
-  changeWord ();     */
+     */
 
 
 
@@ -69,8 +69,8 @@ const changeWord = (string, word, newWowrd) => {
  * @returns {string}
  */
 export const truncate = (string, length) => {
-      let str = string;
-      return str.toLowerCase().slice(string, length);
+      /*let str = string;*/
+      return string.toLowerCase().slice(string, length);
     };
    
     
@@ -89,9 +89,9 @@ export const truncate = (string, length) => {
  * @returns {number}
  */
 export const quantityOfSymbols = (string, symbol) => {
- let str = string;
+ /*let str = string;*/
     let charCounter = 0; 
-      for(let char of str){
+      for(let char of string){
         if(char.toLowerCase().includes(symbol)){
         charCounter++;
         }// end if
@@ -119,12 +119,12 @@ export const quantityOfSymbols = (string, symbol) => {
  * @returns {number}
  */
 export const quantityOfSymbolsWithIndexOf = (string, symbol) => {
-  let str = string;
+  /*let str = string;*/
     let target = symbol; 
     let charCounter = 0;
     let currentPos = 0;
       while (true) {
-      let charPos = str.toLowerCase().indexOf(target, currentPos);
+      let charPos = string.toLowerCase().indexOf(symbol, currentPos);
         if (charPos === -1) break;
         currentPos = charPos + 1; 
         charCounter++;
