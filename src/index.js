@@ -35,7 +35,7 @@ export const changeWord = (string, word, newWord) => {
     const pos = string.indexOf(word);
     const startString = string.slice(0, pos);
     const endString = string.slice(pos + word.length);
-     return `${startString}${newWord}${endString}`
+     return `${startString}${newWord}${endString}`;
        };
  changeWord ();
   
