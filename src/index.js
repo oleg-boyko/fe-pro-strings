@@ -32,9 +32,9 @@ export const replaceZAndVFromString = (string) => {
  * @returns {string}
  */
 export const changeWord = (string, word, newWord) => {
-    let result = string, i = 0, wordSubLen = 'word'.length;
+    let result = string, i = 0, wordSubLen = word.length;
     while (wordSubLen) {
-      i = result.toLowerCase().indexOf('word', i);
+      i = result.toLowerCase().indexOf(word, i);
       if (i === -1) {
       break;
       };
