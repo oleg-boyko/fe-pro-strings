@@ -17,7 +17,7 @@ export const replaceZAndVFromString = (string) => {
          }
         return result;
         };
-  replaceZAndVFromString ();
+
  
    
     
@@ -37,7 +37,7 @@ export const changeWord = (string, word, newWord) => {
     const endString = string.slice(pos + word.length);
      return `${startString}${newWord}${endString}`;
        };
- changeWord ();
+ 
   
 
 
@@ -72,7 +72,7 @@ export const truncate = (string, length) => {
       let str = string;
       return str.toLowerCase().slice(string, length);
     };
-    truncate();
+   
     
  
  
@@ -98,7 +98,7 @@ export const quantityOfSymbols = (string, symbol) => {
       };//end for of
     return `${charCounter}`;
     };//end function
-    quantityOfSymbols();
+   
   
 
 
@@ -131,7 +131,7 @@ export const quantityOfSymbolsWithIndexOf = (string, symbol) => {
         }// end while
     return `${charCounter}`;
     };// end function
-    quantityOfSymbolsWithIndexOf();
+   
  
   
 
