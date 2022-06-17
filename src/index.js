@@ -32,6 +32,16 @@ export const replaceZAndVFromString = (string) => {
  * @returns {string}
  */
 export const changeWord = (string, word, newWord) => {
+    let pos = string.indexOf(word);
+     let startString = string.slice(0, pos);
+       let endString = string.slice(pos + word.length);
+     return `${startString}${newWord}${endString}`
+       };
+  changeWord ();
+
+
+/* пытался еще так решить и получилось в браузере,но гит выдвал кучу всяких ошибок,которые я замахался отлавливать(
+const changeWord = (string, word, newWowrd) => {
     let result = string, i = 0, wordSubLen = word.length;
     while (wordSubLen) {
       i = result.toLowerCase().indexOf(word, i);
@@ -43,7 +53,10 @@ export const changeWord = (string, word, newWord) => {
     };
     return result;
   };
-  changeWord ();
+  changeWord ();     */
+
+
+
   
 
 
