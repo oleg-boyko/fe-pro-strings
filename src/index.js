@@ -98,7 +98,7 @@ export const quantityOfSymbols = (string, symbol) => {
       };//end for of
     return `${charCounter}`;
     };//end function
-    quantityOfSymbols();
+    /*quantityOfSymbols();*/
   
 
 
@@ -131,7 +131,7 @@ export const quantityOfSymbolsWithIndexOf = (string, symbol) => {
         }// end while
     return `${charCounter}`;
     };// end function
-    quantityOfSymbolsWithIndexOf();
+    /*quantityOfSymbolsWithIndexOf();*/
  
   
 
