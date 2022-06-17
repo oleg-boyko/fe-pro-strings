@@ -32,12 +32,12 @@ export const replaceZAndVFromString = (string) => {
  * @returns {string}
  */
 export const changeWord = (string, word, newWord) => {
-    let pos = string.indexOf(word);
-     let startString = string.slice(0, pos);
-       let endString = string.slice(pos + word.length);
+    const pos = string.indexOf(word);
+    const startString = string.slice(0, pos);
+    const endString = string.slice(pos + word.length);
      return `${startString}${newWord}${endString}`
        };
-  changeWord ();
+  
 
 
 /* пытался еще так решить и получилось в браузере,но гит выдвал кучу всяких ошибок,которые я замахался отлавливать(
