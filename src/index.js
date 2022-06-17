@@ -7,7 +7,7 @@
 export const replaceZAndVFromString = (string) => {  
      let result = '';
        for (let symbol of string){
-         if(symbol.toLowerCase().includes('z') || symbol.toLowerCase().includes('v'))
+         if(symbol.toLowerCase().includes(symbol) || symbol.toLowerCase().includes(symbol))
         {
           result = `${result}*`;
         }
