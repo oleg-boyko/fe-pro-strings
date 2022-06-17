@@ -37,6 +37,7 @@ export const changeWord = (string, word, newWord) => {
     const endString = string.slice(pos + word.length);
      return `${startString}${newWord}${endString}`
        };
+/* changeWord ();*/
   
 
 
@@ -69,7 +70,7 @@ const changeWord = (string, word, newWowrd) => {
  */
 export const truncate = (string, length) => {
       let str = string;
-      return str.toLowerCase().slice(string, length);
+      return str.slice(string, length);
     };
     truncate();
     
