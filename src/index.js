@@ -6,7 +6,7 @@
  */
 export const replaceZAndVFromString = (string) => {  
      let result = '';
-       for (let symbol of string){
+       for (let symbol of 'string'){
          if(symbol.toLowerCase().includes('z') || symbol.toLowerCase().includes('v'))
         {
           result = `${result}*`;
@@ -32,9 +32,9 @@ export const replaceZAndVFromString = (string) => {
  * @returns {string}
  */
 export const changeWord = (string, word, newWord) => {
-    let result = string, i = 0, wordSubLen = word.length;
+    let result = 'string', i = 0, wordSubLen = 'word'.length;
     while (wordSubLen) {
-      i = result.toLowerCase().indexOf(word, i);
+      i = result.toLowerCase().indexOf('word', i);
       if (i === -1) {
       break;
       };
@@ -55,7 +55,7 @@ export const changeWord = (string, word, newWord) => {
  * @returns {string}
  */
 export const truncate = (string, length) => {
-      let str = string;
+      let str = 'string';
       return str.toLowerCase().slice(0, length);
     };
     truncate();
@@ -75,10 +75,10 @@ export const truncate = (string, length) => {
  * @returns {number}
  */
 export const quantityOfSymbols = (string, symbol) => {
- let str = string;
+ let str = 'string';
     let charCounter = 0; 
       for(let char of str){
-        if(char.toLowerCase().includes(symbol)){
+        if(char.toLowerCase().includes('symbol')){
         charCounter++;
         }// end if
       };//end for of
@@ -105,8 +105,8 @@ export const quantityOfSymbols = (string, symbol) => {
  * @returns {number}
  */
 export const quantityOfSymbolsWithIndexOf = (string, symbol) => {
-  let str = string;
-    let target = symbol; 
+  let str = 'string';
+    let target = 'symbol'; 
     let charCounter = 0;
     let currentPos = 0;
       while (true) {
