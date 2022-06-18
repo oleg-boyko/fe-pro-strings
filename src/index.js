@@ -41,7 +41,7 @@ export const changeWord = (string, word, newWord) => {
   
 
 
-/* пытался еще так решить и получилось в браузере,но гит выдвал кучу всяких ошибок,которые я замахался отлавливать(
+/* пытался альтернативное решение
 const changeWord = (string, word, newWowrd) => {
     let result = string, i = 0, wordSubLen = word.length;
     while (wordSubLen) {
@@ -89,14 +89,13 @@ export const truncate = (string, length) => {
  * @returns {number}
  */
 export const quantityOfSymbols = (string, symbol) => {
- /*let str = string;*/
     let charCounter = 0; 
       for(let char of string){
         if(char.toLowerCase().includes(symbol)){
         charCounter++;
         }// end if
       };//end for of
-    return `${charCounter}`;
+    return charCounter;
     };//end function
    
   
@@ -119,9 +118,7 @@ export const quantityOfSymbols = (string, symbol) => {
  * @returns {number}
  */
 export const quantityOfSymbolsWithIndexOf = (string, symbol) => {
-  /*let str = string;*/
-    let target = symbol; 
-    let charCounter = 0;
+     let charCounter = 0;
     let currentPos = 0;
       while (true) {
       let charPos = string.toLowerCase().indexOf(symbol, currentPos);
@@ -129,7 +126,7 @@ export const quantityOfSymbolsWithIndexOf = (string, symbol) => {
         currentPos = charPos + 1; 
         charCounter++;
         }// end while
-    return `${charCounter}`;
+    return charCounter;
     };// end function
    
  
